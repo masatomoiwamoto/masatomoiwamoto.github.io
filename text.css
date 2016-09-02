@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+   font-family: LeagueGothic;
+   src: url('font/LeagueGothic-Regular.otf') format("opentype");
+   
+ 　font-family: Segan;
+   src: url('font/Segan-Light.ttf') format("opentype");
+   
+   font-family: Archive;
+   src: url('font/Archive.otf') format("opentype");
+}
+
+body {
+    text-align: center;
+}
+nav {
+    font-family: Archive;
+}
+
+#logo {
+  padding: 200px 0;
+  text-align: center;
+}
+
+#logo img{
+    max-width: 200px;
+    border: 6px solid #2B2B2B;
+    border-radius: 30%;
+}
+#logo h1 {
+    letter-spacing: 0.01em;
+    color: #2B2B2B;
+    text-shadow: 1px 1px 0px #000;
+    font-family: Archive;
+}
+body > h2 {
+  margin-top: -50px; /* 固定ナビの高さ分のネガティブマージン */
+  padding-top: 50px; /* 打ち消し用のパディング */
+}

@@ -2,17 +2,86 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
+    <meta name="robots" content="all" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Sample</title>
-    <!-- BootstrapのCSS読み込み -->
+    <meta name=”keywords” content=”岩本正智,ポートフォリオ,WEBプログラマー,自己紹介”>
+    <meta name=”description” content=”かけだしWEBプログラマー岩本正智の作成したチンケなアプリケーションを紹介しつつ自身の紹介を行うポートフォリオ的なページです。TechAcademyのオンラインブートキャンプで学んだ物をここに掲載しています。”>
+    <title>Webプログラマーを目指す岩本正智の自己紹介ページ -PORTFOLIO-</title>
+    
+    <!--BootstrapのCSS,jQuery,BootstrapのJS読み込み-->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <!-- jQuery読み込み -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!--自前の読み込み-->
+    <script type="text/javascript" src="js/pagescroll.js"></script>
+    <link rel="stylesheet" href="text.css">
+    <link rel="shortcut icon" href="ico/favicon.ico" >
+    
   </head>
+  
+  
+  
   <body>
-    <h1>Hello, world!</h1>
+    
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>      
+				<span class="icon-bar"></span>
+				<script>
+$(document).ready(function () {
+    $(".navbar-nav li a").click(function(event) {
+        $(".navbar-collapse").collapse('hide');
+    });
+});
+</script>
+			</button>
+			
+            <a class="navbar-brand">PORTFOLIO</a>
+            </div>
+              
+              <div class="collapse navbar-collapse target">
+                  <ul class="nav navbar-nav">
+                    <li><a href='#top'>TOP</a></li>
+                    <li><a href='#about' >ABOUT</a></li>
+                    <li><a href='#create'>CREATE</a></li>
+                    <li><a href='#section3'>CONTACT</a></li>
+                  </ul>
+              </div>
+      </nav>
+<!--TOPに戻るためのアンカー-->              
+<a id='top'></a>
+      <div id="logo">
+        <a id='top' href="top.html"><img src="img/photo.jpg" alt="topページに移動"></a>
+        <h1>Masatomo iwamoto</h1>
+      </div>
+      
+  <h2 id='about'>Section 1</h2>
+  <p class='pad'>Text Text Text Text</p>
+  <a href='#top'>▲top</a>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h2 id='create'>Section 2</h2>
+  <p class='pad'>Text Text Text Text</p>
+  <a href='#top'>▲top</a>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <h2 id='section3'>Section 3</h2>
+  <p class='pad'>Text Text Text Text</p>
+  <a href='#top'>▲top</a>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <h2 id='section4'>Section 4</h2>
+  <p class='pad'>Text Text Text Text</p>
+  <a href='#top'>▲top</a>
+  <br /><br /><br /><br />
+  <br /><br /><br /><br />
+      <footer>
+        <p>&copy; 2016 Masatomo iwamoto.</p>
+      </footer>
   </body>
 </html>
