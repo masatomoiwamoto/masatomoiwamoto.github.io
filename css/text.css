@@ -4,20 +4,12 @@
 }
 
 @font-face {
-   font-family: LeagueGothic;
-   src: url('font/LeagueGothic-Regular.otf') format("opentype");
-   
+
  　font-family: Segan;
    src: url('font/Segan-Light.ttf') format("opentype");
    
    font-family: Archive;
    src: url('font/Archive.otf') format("opentype");
-   
-      font-family: iroha-r;
-   src: url('font/irohakakuC-Regular.ttf') format("opentype");
-   
-      font-family: iroha-b;
-   src: url('font/irohakakuC-Bold.ttf') format("opentype");
 }
 div h2{
     margin-top: -50px; /* 固定ナビの高さ分のネガティブマージン */
@@ -50,6 +42,9 @@ body > a{
 }
 nav {
     font-family: Archive;
+}
+.github{
+    padding-right:10px;
 }
 #logo {
   padding: 20px 0;
