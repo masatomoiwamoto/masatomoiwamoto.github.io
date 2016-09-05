@@ -12,32 +12,80 @@
    
    font-family: Archive;
    src: url('font/Archive.otf') format("opentype");
+   
+      font-family: iroha-r;
+   src: url('font/irohakakuC-Regular.ttf') format("opentype");
+   
+      font-family: iroha-b;
+   src: url('font/irohakakuC-Bold.ttf') format("opentype");
 }
-
+div h2{
+    margin-top: -50px; /* 固定ナビの高さ分のネガティブマージン */
+  padding-top: 50px; /* 打ち消し用のパディング */
+  font-family: Segan;
+  letter-spacing: -0.04em;
+}
 body {
     text-align: center;
+}
+body > h1 {
+  margin-top: -50px; /* 固定ナビの高さ分のネガティブマージン */
+  padding-top: 50px; /* 打ち消し用のパディング */
+  font-family: Segan;
+  letter-spacing: -0.04em;
+}
+
+
+body > h2 {
+  margin-top: -50px; /* 固定ナビの高さ分のネガティブマージン */
+  padding-top: 50px; /* 打ち消し用のパディング */
+  font-family: Segan;
+  letter-spacing: -0.04em;
+}
+body > ul{
+    text-aligh: center;
+}
+body > a{
+    padding: 100px;
 }
 nav {
     font-family: Archive;
 }
-
 #logo {
-  padding: 200px 0;
+  padding: 20px 0;
   text-align: center;
 }
 
 #logo img{
-    max-width: 200px;
-    border: 6px solid #2B2B2B;
-    border-radius: 30%;
+    max-width: 250px;
+    border: 10px solid #fff;
+    border-radius: 70%;
+    margin-left: 250px;
 }
-#logo h1 {
-    letter-spacing: 0.01em;
-    color: #2B2B2B;
-    text-shadow: 1px 1px 0px #000;
-    font-family: Archive;
+.hoge {
+    padding-bottom: 300px;
 }
-body > h2 {
-  margin-top: -50px; /* 固定ナビの高さ分のネガティブマージン */
-  padding-top: 50px; /* 打ち消し用のパディング */
+
+
+#myform{
+  width:20%;
+  margin:0 auto;
+}
+input{
+    width:50%;
+}
+label{
+　  display:block;
+　  margin-bottom:5px;
+　  color:white;
+　  font-color: black;
+}
+input,textarea{
+    width:100%;
+    padding:10px;
+    border-radius:3px;
+    border:0px;
+        }
+input:focus,textarea:focus{
+    outline:1;
 }

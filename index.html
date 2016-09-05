@@ -16,6 +16,7 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!--自前の読み込み-->
     <script type="text/javascript" src="js/pagescroll.js"></script>
+    <script type="text/javascript" src="js/progression.js"></script>
     <link rel="stylesheet" href="text.css">
     <link rel="shortcut icon" href="ico/favicon.ico" >
     
@@ -39,7 +40,8 @@ $(document).ready(function () {
 });
 </script>
 			</button>
-			
+
+
             <a class="navbar-brand">PORTFOLIO</a>
             </div>
               
@@ -48,38 +50,120 @@ $(document).ready(function () {
                     <li><a href='#top'>TOP</a></li>
                     <li><a href='#about' >ABOUT</a></li>
                     <li><a href='#create'>CREATE</a></li>
-                    <li><a href='#section3'>CONTACT</a></li>
+                    <li><a href='#contact'>CONTACT</a></li>
+                    <li><a href='https://github.com/masatomoiwamoto' target="_blank">MY GITHUB PAGE</a></li>
                   </ul>
               </div>
       </nav>
+      
 <!--TOPに戻るためのアンカー-->              
 <a id='top'></a>
-      <div id="logo">
-        <a id='top' href="top.html"><img src="img/photo.jpg" alt="topページに移動"></a>
-        <h1>Masatomo iwamoto</h1>
+      <div class="hoge">
+      </div>
+  <h1 id='about'>An idea has no value. It is important to carry out.</h1>
+      	<section class="portfolio">
+      		<div class="container margin-bottom">
+      			<div class="row">
+      				<div class="col-md-3 visible-md visible-lg">
+      				  <div id="logo">
+      					<img src="img/photo.jpg" alt="岩本 正智 / Masatomo Iwamoto">
+      					</div>
+      				</div>
+      				<div class="col-md-9">
+      					<h2><span>岩本 正智</span> / Masatomo Iwamoto</h2>
+      					<p>Web Programmer</p>
+      					<div class="history">
+      						<p>1991年生まれ。2016年 WEBプログラマーに。</p>
+      						<p>USE TOOLS<br>
+      						Photoshop / illustrator  / Maya / 3DMAX / ATOM / <br>
+      						EXEL / WORD / SAI / Fire Alpaca etc..</p>
+      						<p>CREATE / APPLICATION<br>
+      						message board / twitter clone /<br>
+      						MONO-list / original service <br></p>
+      						080-5357-0860 [M.Iwamoto /TechAcademy Students]</p>
+      						<a href="https://twitter.com/ragpoyo" class="twitter-follow-button" data-show-count="false">Follow @ragpoyo</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      					</div>
+      				</div>
+      			</div>
+      		</div>
+      	</div>
+	</section>
+  <a href='#top'>▲top</a>
+      <div class="hoge">
+      </div>
+
+  <h2 id='create'>CREATE</h2>
+  <p class='pad'>
+    <a href="#message-b"><button type="button" class="btn btn-primary">メッセージボード</button></a>
+    <a href="#twitter-clone"><button type="button" class="btn btn-primary">Twitterクローン</button></a>
+    <a href="#monolist"><button type="button" class="btn btn-primary">モノリスト</button></a>
+    <a href="#original-s"><button type="button" class="btn btn-primary">オリジナルサービス</button></a>
+  </p>
+  <div class="hoge">
+      </div>
+  <div id="createbotton">
+  <div id='message-b'>
+  <h2>メッセージボード</h2>
+  </div>
+<img border="0" src="img/app1.jpg" width="1000" height="650" alt="メッセージボード">
+  
+      <div id='twitter-clone'>
+  <h2>Twitterクローン</h2>
+  </div>
+ <img border="0" src="img/app2.jpg" width="1000" height="650" alt="twitterクローン">
+  
+      <div id='monolist'>
+  <h2>モノリスト</h2>
+  </div>
+  <img border="0" src="img/app3.jpg" width="1000" height="650" alt="モノリスト">
+
+      <div id='original-s'>
+        <h2>オリジナルサービス</h2>
+        </div>
+        <img border="0" src="img/app4.jpg" width="1000" height="650" alt="オリジナルサービス">
+  <a href='#top'>▲top</a>
+        <div class="hoge">
+      </div>
       </div>
       
-  <h2 id='about'>Section 1</h2>
-  <p class='pad'>Text Text Text Text</p>
-  <a href='#top'>▲top</a>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <h2 id='contact'>CONTACT</h2>
+    <form id="myform">
+      <p>
+        <label for="name">Your Name</label>
+        <input type="text" name="name" placeholder="お名前（全角カタカナ）" id="name">
+      </p>
 
-  <h2 id='create'>Section 2</h2>
-  <p class='pad'>Text Text Text Text</p>
+      <p>
+        <label for="adress">Adress</label>
+        <input type="text" name="adress" placeholder="住所" id="adress">
+      </p>
+
+      <p>
+        <label for="postel">Postal code</label>
+        <input type="text" name="postel" placeholder="郵便番号(半角英数)" id="postel">
+      </p>
+       
+      <p>
+          <label for="#tel-num">Telephone Number</label>
+          <textarea name="tel-num" id="tel-num"></textarea>
+      </p>
+        
+      <p>
+        <label for="remarks">Remarks</label>
+        <textarea name="remarks" cols="40" rows="5" placeholder="備考欄" id="remarks"></textarea>
+      </p>
+
+      <p>
+          <input type="submit" class="button" value="Transmission!">
+      </p>
+
+
+    </form>
+  </p>
   <a href='#top'>▲top</a>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  <h2 id='section3'>Section 3</h2>
-  <p class='pad'>Text Text Text Text</p>
-  <a href='#top'>▲top</a>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  <h2 id='section4'>Section 4</h2>
-  <p class='pad'>Text Text Text Text</p>
-  <a href='#top'>▲top</a>
-  <br /><br /><br /><br />
-  <br /><br /><br /><br />
+        <div class="hoge">
+        </div>
+        
       <footer>
         <p>&copy; 2016 Masatomo iwamoto.</p>
       </footer>
